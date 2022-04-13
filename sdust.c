@@ -169,6 +169,7 @@ uint64_t *sdust(void *km, const uint8_t *seq, int l_seq, int T, int W, int *n)
 	return ret;
 }
 
+#if _SDUST_MAIN
 #include <zlib.h>
 #include <stdio.h>
 #include "ketopt.h"
@@ -204,3 +205,4 @@ int main(int argc, char *argv[])
 	gzclose(fp);
 	return 0;
 }
+#endif
